@@ -7,6 +7,9 @@ from sklearn.metrics import accuracy_score
 
 
 path = r"Vegetable_images"
+data =[]
+labels = []
+
 categories = os.listdir(path)
 for category in categories:
   terms = os.path.join(path, category)
@@ -17,7 +20,10 @@ for category in categories:
       img_array = cv2.imread(os.path.join(inpath, img))
       resized_array = cv2.resize(img_array, (100, 100))
       flattened_array = resized_array.flatten()
-      
+
+
+
+
 
     
  
